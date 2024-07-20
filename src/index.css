@@ -1,0 +1,24 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #2f3955;
+  --secondary: #3a4e68;
+  --terceary: #533483;
+  --red: #a83548;
+  --soft-cinza: #b3b2b2;
+  --white: #fefefe;
+  --black: #111;
+  --gray: #3d3c3c;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}

@@ -1,0 +1,52 @@
+.header {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid #884b4b;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.header span {
+    font-size: 1.5rem;
+    font-weight: bold; /* fonte negrita em palvras */
+    text-shadow: 5px 5px #0c0b0b;
+}
+
+
+.header a {
+text-decoration: none;
+color: var(--white);
+padding-right: 1.5rem;
+font-size: 1.125rem;
+}
+
+.header a:hover{
+    color: var(--red)
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 634px) {
+    .header {
+        flex-direction: column; /* Altera para coluna */
+        height: auto; /* Altura automática para acomodar conteúdo */
+        padding: 10px 0px; /* Adiciona espaçamento interno */
+        text-align: center; /* Centraliza o conteúdo */
+        margin-right: 0;
+    }
+
+    .header a {
+        padding: 10px 5px;
+        width: 100%; /* Largura total dos links */
+        box-sizing: border-box;
+        font-size: 0.875rem; /* Reduz a fonte para ajustar melhor */
+    }
+    
+    .header span {
+        font-size: 1.2rem; /* Reduz a fonte do span */
+    }
+}

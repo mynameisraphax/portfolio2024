@@ -1,0 +1,129 @@
+.cursos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 1rem;
+    overflow-x: hidden;
+    
+}
+
+
+.cursos:-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+.cursoslist ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o espaçamento padrão da lista */
+}
+
+.cursoslist li {
+    opacity: 0; /* Começa com a opacidade zero para esconder os itens */
+    animation: fadeIn 1s ease forwards; /* Aplica a animação com 1 segundo de duração */
+}
+
+/* Define a animação de entrada da direita */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Começa 50px à direita */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Termina na posição original */
+    }
+}
+
+/* Aplica um delay incremental para cada item da lista */
+.cursoslist ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.cursoslist ul li:nth-child(2) {
+    animation-delay: 1s; /* Delay de 1 segundo para o segundo item */
+}
+
+.cursoslist ul li:nth-child(3) {
+    animation-delay: 2s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(4) {
+    animation-delay: 3s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(5) {
+    animation-delay: 4s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(6) {
+    animation-delay: 5s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(7) {
+    animation-delay: 6s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(8) {
+    animation-delay: 7s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(9) {
+    animation-delay: 8s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(10) {
+    animation-delay: 9s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(11) {
+    animation-delay: 10s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(12) {
+    animation-delay: 11s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(13) {
+    animation-delay: 12s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(14) {
+    animation-delay: 13s; /* Delay de 2 segundos para o terceiro item */
+}
+
+.cursoslist ul li:nth-child(15) {
+    animation-delay: 14s; /* Delay de 2 segundos para o terceiro item */
+}
+.cursoslist span {
+    color: green;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .cursos {
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .cursos h2 {
+        font-size: 25px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
+
+    .cursoslist h3 {
+        font-size: 15px; /* Reduz o tamanho da fonte para dispositivos móveis */
+        margin-top: 0.5rem; /* Reduz o espaçamento acima do título */
+    }
+
+    .cursoslist li {
+        margin-bottom: 5px; /* Reduz o espaçamento entre os itens da lista */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
+}

@@ -1,0 +1,26 @@
+.titulo2{
+    padding-top: 32px;
+}
+
+.divsoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.textogrande {
+    font-size: 300px;
+    color: var(--red);
+    font-weight: bold;
+}
+
+.textovermelho {
+    font-size: 1.5rem;
+    color: var(--red);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

@@ -1,0 +1,111 @@
+/* css da page home */
+
+.home {
+    width: 100%;
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.home img {
+    height: 450px;
+    filter: contrast(150%);
+    margin-right: 5px;
+}
+
+
+.home p {
+    font-size: 25px;
+    font-family: 'fire', monospace;
+}
+
+.home span {
+    color:  var(--red);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(60px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  .fadeInRight {
+    opacity: 0; 
+    animation: fadeIn 1s ease forwards; 
+  }
+  
+
+  .fadeInRight {
+    animation-delay: 1s; 
+  }
+  
+  
+  .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-family: 'Poppins', monospace;
+    border-radius: 9px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .btn_red {
+    background-color: var(--red);
+    color: var(--white);
+  }
+  
+  .btn_red:hover {
+    background-color: var(--primary);
+  }
+
+
+  @media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Muda para empilhar os elementos verticalmente */
+        text-align: center; /* Centraliza o texto */
+        padding: 50px 0px;
+        margin-right: 0;
+
+    }
+
+    .home img {
+        height: 280px; /* Imagem responsiva */
+        margin-bottom: 20px; /* Espaçamento entre imagem e texto */
+    }
+
+    .btn {
+        margin-left: 33px;
+        align-items: center;
+        width: 80%; /* Largura total */
+        margin-top: 15px; /* Espaçamento acima do botão */
+    }
+}
