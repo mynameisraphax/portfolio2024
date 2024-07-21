@@ -8,7 +8,9 @@
     justify-content: space-around;
     border-bottom: 3px solid #884b4b;
     box-sizing: border-box;
-    margin-bottom: 0;
+    top: 0;
+    position: fixed;
+    
 }
 
 .header span {
@@ -37,6 +39,8 @@ font-size: 1.125rem;
         padding: 10px 0px; /* Adiciona espaçamento interno */
         text-align: center; /* Centraliza o conteúdo */
         margin-right: 0;
+        top: 0;
+        position: absolute;
     }
 
     .header a {

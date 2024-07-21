@@ -8,14 +8,14 @@
     flex-direction: column;
     align-items: center;
 
-    padding-block: 1rem;
+    padding-block: 35px;
     gap: 1rem;
 }
 
 
 @media only screen and (max-width: 768px) {
     .container {
-      padding-block: 0.5rem; /* Reduz o padding vertical */
+      padding-block: 90px; /* Reduz o padding vertical */
       gap: 0.5rem; /* Reduz o espaçamento entre os itens */
     }
   }
